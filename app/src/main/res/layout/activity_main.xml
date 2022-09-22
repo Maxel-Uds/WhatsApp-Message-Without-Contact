@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/phone"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="80dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/purple_200"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/purple_200"
+        android:capitalize="characters"
+        android:ems="10"
+        android:hint="Mensagem"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:text="Enviar Mensagem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        app:layout_constraintVertical_bias="0.504" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
